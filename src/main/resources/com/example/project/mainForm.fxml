@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.project.mainController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <AnchorPane prefHeight="453.0" prefWidth="564.0">
+      <children>
+         <Label fx:id="lblPlace" layoutX="50.0" layoutY="273.0" text="Место:" />
+         <Label fx:id="lblTaken" layoutX="136.0" layoutY="273.0" prefHeight="17.0" prefWidth="72.0" />
+         <Label layoutX="50.0" layoutY="300.0" text="Стоимость:" />
+         <Label fx:id="lblPriceWRate" layoutX="50.0" layoutY="327.0" text="Стоимость с тарифом:" />
+         <Button fx:id="btnTake" layoutX="379.0" layoutY="309.0" onAction="#onTakeButtonClick" mnemonicParsing="false" prefHeight="37.0" prefWidth="87.0" text="Занять" />
+         <Group layoutX="12.0" layoutY="103.0">
+            <children>
+               <RadioButton fx:id="radFloorOne" mnemonicParsing="false" onAction="#checkChanged" text="Этаж 1" />
+               <RadioButton fx:id="radFloorTwo" layoutY="27.0" mnemonicParsing="false" onAction="#checkChanged" text="Этаж 2" />
+               <RadioButton fx:id="radFloorThree" layoutY="54.0" mnemonicParsing="false" onAction="#checkChanged" text="Этаж 3" />
+            </children>
+         </Group>
+         <ImageView fx:id="imgBox" fitHeight="241.0" fitWidth="421.0" layoutX="125.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+         <Label layoutY="14.0" text="Время:" />
+         <Label layoutY="42.0" text="Тариф:" />
+         <Label fx:id="lblTime" layoutX="51.0" layoutY="14.0" prefHeight="17.0" prefWidth="72.0" />
+         <Label fx:id="lblRate" layoutX="51.0" layoutY="42.0" prefHeight="17.0" prefWidth="72.0" />
+         <Label fx:id="lblPrice" layoutX="116.0" layoutY="301.0" prefHeight="17.0" prefWidth="50.0" />
+         <Button fx:id="btnPlaceOne" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceTwo" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceThree" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceFour" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceFive" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceSix" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceSeven" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceEight" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceNine" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Button fx:id="btnPlaceTen" layoutX="44.0" layoutY="2.0" mnemonicParsing="false" text="Button" />
+         <Label layoutX="336.0" layoutY="273.0" text="Количество часов:" />
+         <ComboBox fx:id="cmbTime" layoutX="451.0" layoutY="269.0" onAction="#onTimeChanged" prefHeight="25.0" prefWidth="87.0" />
+      </children>
+   </AnchorPane>
+</VBox>
